@@ -14,4 +14,6 @@ Installed plugins can be check in "init-packer.lua" file.
 
 Press space twice to open the menu.
 
+![LSP video example](images/video.mp4)
+
 ![LSP menu Example](images/lsp.png)
