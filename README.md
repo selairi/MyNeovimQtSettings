@@ -18,6 +18,3 @@ Press space twice to open the menu.
 
 ![LSP menu Example](images/lsp.png)
 
-
-https://user-images.githubusercontent.com/1163139/226420404-9644cf29-18fe-482b-922b-4ab40c7a3fa6.mp4
-
