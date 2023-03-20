@@ -2,6 +2,8 @@
 
 A simple script to install my neovim-qt settings.
 
+Neovim-qt and kdialog are needed.
+
 To install, write in your terminal:
 
 ```
