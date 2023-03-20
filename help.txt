@@ -1,0 +1,61 @@
+Neovim-qt quick help
+======================
+
+<F1>        Show this help
+<F2>        Show/hide file explorer
+<F3>        Show/hide open files
+:explore    Open a file
+:split      Split view horizontally
+:vsplit     Split view vertically
+<C-n>       Autocomplete
+<C-x><C-o>  Autocomplete code
+
+Navigate through code
+---------------------
+gd  Go to function/method definition
+gi  Jump to function/method implementation
+gD  Go to function/method declaration
+K   Show a window with information about the function/method
+gr  Displays in a window all the references made to the function/method
+%   On a brace or parenthesis. Searches for the key {} or parenthesis () with which it is paired. 
+=   Format the code that would have been selected with the mode v
+:Mason  Open the GUI for uninstalling/uninstalling LSP servers to detect errors in the code. Click i on the LSP to be installed. Once installed you have to add to "init.lua":
+                -- Change jdtls to the installed LSP.
+                require'lspconfig'['jdtls'].setup{
+                  on_attach = on_attach,
+                  flags = lsp_flags,
+                }
+
+Spell check
+----------------------
+:set spell spelllang=en   Activates spell checking. The corresponding dictionary will be downloaded.
+:set nospell              Turns off spell checking.
+
+Copy and paste
+--------------
+v   The desired text is selected
+y   Copies the selected text
+p   Pastes the selected text
+"+y Copies to the clipboard
+"+p Pastes from the clipboard
+
+Block edit
+-----------------
+<C-v>   Selects the block to be edited
+x       Deletes the selected block
+I       Edits to insert in each of the selected lines
+
+Buffers
+-------
+:ls   Lists open files
+:b<number>  Displays to edit the file indicated by the number
+
+:set nu   Turns on line numbering
+:set nonu Disables line numbering
+
+Package installer
+----------------------
+You have to edit the ~/.config/nvim/init.lua file to add/remove packages from the package manager.
+:PackerUpdate     installs/updates plugins.
+:PackerClean      Uninstall packages that are not in the "init.lua".
+

@@ -1,2 +1,5 @@
 # MyNeovimQtSettings
-A simple script to install my neovim-qt settings
+
+A simple script to install my neovim-qt settings.
+
+
