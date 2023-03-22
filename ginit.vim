@@ -194,6 +194,7 @@ call quickui#menu#install("&Window", [
 
 call quickui#menu#install("&LSP", [
       \ ["LSP Completion\tCtrl x Ctrl o", 'call feedkeys("\<ESC>i\<right>\<C-x>\<C-o>")'],
+			\ ["Buffer symbols", 'lua vim.lsp.buf.document_symbol()'],
 			\ ["Go declaration\tgD", 'lua vim.lsp.buf.declaration()'],
 			\ ["Go definition\tgd", 'lua vim.lsp.buf.definition()'],
       \ ["Show info\tK", 'lua vim.lsp.buf.hover()'],
