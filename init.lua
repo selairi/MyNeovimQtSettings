@@ -119,7 +119,7 @@ call quickui#menu#install('&File', [
       \ ["Load session\t:source session.vim", 'call LoadSessionBox()'],
       \ ["Save session\t:mksession session.vim", 'call SaveSessionBox()'],
       \ [ "--", '' ],
-      \ [ "E&xit\t:q!", 'qa!' ],
+      \ [ "E&xit\t:qa!", 'qa!' ],
       \ [ "Save all and E&xit\t:wqa", 'wqa' ],
       \ ])
 
