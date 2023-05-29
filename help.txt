@@ -1,14 +1,15 @@
 Neovim-qt quick help
 ======================
 
-<F1>        Show this help
-<F2>        Show/hide file explorer
-<F3>        Show/hide open files
-:explore    Open a file
-:split      Split view horizontally
-:vsplit     Split view vertically
-<C-n>       Autocomplete
-<C-x><C-o>  Autocomplete code
+<F1>            Show this help
+<F2>            Show/hide file explorer
+<Tab><Tab>      Show/hide open files
+<space><space>  Show menu
+:Explore        Open a file
+:split          Split view horizontally
+:vsplit         Split view vertically
+<C-n>           Autocomplete
+<C-x><C-o>      Autocomplete code
 
 Navigate through code
 ---------------------

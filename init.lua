@@ -17,7 +17,7 @@ vim.cmd([[
 noremap <F1> :e ~/.config/nvim/help.txt<CR>
 inoremap <F1> <Esc>:e ~/.config/nvim/help.txt<CR>
 
-noremap <F3> :BuffergatorToggle<CR>
+noremap <tab><tab> :BuffergatorToggle<CR>
 inoremap <F3> <Esc>:BuffergatorToggle<CR>
 ]])
 
