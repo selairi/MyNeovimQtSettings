@@ -6,6 +6,11 @@ vim.opt.softtabstop = 2
 vim.opt.expandtab = true
 vim.cmd [[set mouse=a]]
 
+-- Map <Esc>> to exit from terminal mode
+vim.cmd([[
+tnoremap <Esc> <C-\><C-n>
+]])
+
 -- SnipMate config
 -- Remove SnipMate error
 vim.cmd([[
