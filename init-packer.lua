@@ -24,4 +24,6 @@ require('packer').startup(function()
   use 'jeetsukumaran/vim-buffergator'
   -- Menus
   use 'skywind3000/vim-quickui' 
+  -- Colorschemes
+  use 'flazz/vim-colorschemes'
 end)
