@@ -169,6 +169,9 @@ call quickui#menu#install("&Window", [
       \ ])
 
 call quickui#menu#install("&LSP", [
+      \ ["Enable LSP", 'edit'],
+      \ ["Disable LSP", 'lua vim.lsp.stop_client(vim.lsp.get_active_clients())'],
+      \ ['--', ''],  
       \ ["LSP Completion\tCtrl x Ctrl o", 'call feedkeys("\<ESC>i\<right>\<C-x>\<C-o>")'],
 			\ ["Buffer symbols", 'lua vim.lsp.buf.document_symbol()'],
 			\ ["Go declaration\tgD", 'lua vim.lsp.buf.declaration()'],
