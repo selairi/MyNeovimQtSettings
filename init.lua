@@ -24,6 +24,8 @@ inoremap <F1> <Esc>:e ~/.config/nvim/help.txt<CR>
 
 noremap <tab><tab> :BuffergatorToggle<CR>
 inoremap <F3> <Esc>:BuffergatorToggle<CR>
+
+noremap <tab><tab><tab> :TagbarToggle<CR>
 ]])
 
 -- Menus

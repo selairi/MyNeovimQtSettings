@@ -26,4 +26,6 @@ require('packer').startup(function()
   use 'skywind3000/vim-quickui' 
   -- Colorschemes
   use 'flazz/vim-colorschemes'
+  -- Tagbar: Code browser based on ctags
+  use 'preservim/tagbar'
 end)
