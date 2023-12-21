@@ -4,7 +4,9 @@ vim.opt.tabstop = 2
 vim.opt.shiftwidth = 2
 vim.opt.softtabstop = 2
 vim.opt.expandtab = true
-vim.cmd [[set mouse=a]]
+vim.cmd [[set mouse=a
+set title titlestring=%<NeoVim:%F titlelen=70
+]]
 
 -- Map <Esc>> to exit from terminal mode
 vim.cmd([[
@@ -25,7 +27,7 @@ inoremap <F1> <Esc>:e ~/.config/nvim/help.txt<CR>
 noremap <tab><tab> :BuffergatorToggle<CR>
 inoremap <F3> <Esc>:BuffergatorToggle<CR>
 
-noremap <tab><tab><tab> :TagbarToggle<CR>
+noremap <S-tab><S-tab> :TagbarToggle<CR>
 ]])
 
 -- Menus

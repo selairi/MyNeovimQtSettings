@@ -16,7 +16,7 @@ vnoremap <silent><RightMouse> :call GuiShowContextMenu()<CR>gv
 
 colorscheme slate
 
-GuiFont Source Code Pro:h16
+GuiFont Source Code Pro:h20
 
 let s:fontsize = 20
 function! AdjustFontSize(amount)
