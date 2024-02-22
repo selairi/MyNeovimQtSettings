@@ -5,11 +5,16 @@ Neovim-qt quick help
 <F2>            Show/hide file explorer
 <Tab><Tab>      Show/hide open files
 <space><space>  Show menu
+<Enter><Enter>  Open a file
 :Explore        Open a file
 :split          Split view horizontally
 :vsplit         Split view vertically
 <C-n>           Autocomplete
 <C-x><C-o>      Autocomplete code
+*               Finds word under cursor
+zR              Open all code folds
+zM              Close all code folds
+zA              Fold/Unfold actual code
 
 Navigate through code
 ---------------------

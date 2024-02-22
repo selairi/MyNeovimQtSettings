@@ -4,6 +4,11 @@
 rm -Rf ~/.config/nvim
 rm -Rf ~/.local/share/nvim/
 
+# Copy example snippet
+mkdir -p ~/.config/nvim/snippets
+cp c.snippets ~/.config/nvim/snippets
+
+# Install package manager
 mkdir -p ~/.local/share/nvim/site/pack/git-plugins/start
 #cd ~/.local/share/nvim/site/pack/git-plugins/start
 

@@ -28,6 +28,8 @@ noremap <tab><tab> :BuffergatorToggle<CR>
 inoremap <F3> <Esc>:BuffergatorToggle<CR>
 
 noremap <S-tab><S-tab> :TagbarToggle<CR>
+
+noremap <CR><CR> :Explore<CR>
 ]])
 
 -- Menus
@@ -151,6 +153,10 @@ call quickui#menu#install('&Edit', [
       \ [ "--", '' ],
       \ ['Show line numbers %{&nu? "Off":"On"}', 'set nu!'],
       \ ['Set &Cursor Line %{&cursorline? "Off":"On"}', 'set cursorline!'],
+      \ [ "--", '' ],
+      \ ["Open all folds\tzR", 'call feedkeys("\<ESC>zR")'],
+      \ ["Close all folds\tzM", 'call feedkeys("\<ESC>zM")'],
+      \ ["Open/Close fold\tzA", 'call feedkeys("\<ESC>zA")'],
       \ ])
 
 " script inside %{...} will be evaluated and expanded in the string
@@ -162,6 +168,9 @@ call quickui#menu#install("&Tools", [
       \ [ '--', ''],
       \ [ "Install or update plugins\t:PackerUpdate", 'PackerUpdate'],
       \ [ "Clean plugins\t:PackerClean", 'PackerClean'],
+      \ [ '--', ''],
+      \ ["Explore default snippets", 'Explore ~/.local/share/nvim/site/pack/packer/start/vim-snippets/snippets'],
+      \ ["Explore custom snippets", 'Explore ~/.config/nvim/snippets'],
 			\ ])
 
 call quickui#menu#install("&Window", [
