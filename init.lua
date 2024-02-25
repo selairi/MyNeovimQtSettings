@@ -181,6 +181,10 @@ call quickui#menu#install("&Window", [
       \ [ "Zoom -\tCtrl -", 'call AdjustFontSize(-1)', '' ],
       \ ])
 
+call quickui#menu#install("&Settings", [
+      \ [ "Edit settings", 'Explore ~/.config/nvim', '' ],
+      \ ])
+
 call quickui#menu#install("&LSP", [
       \ ["Enable LSP", 'edit'],
       \ ["Disable LSP", 'lua vim.lsp.stop_client(vim.lsp.get_active_clients())'],
