@@ -30,6 +30,9 @@ inoremap <F3> <Esc>:BuffergatorToggle<CR>
 noremap <S-tab><S-tab> :TagbarToggle<CR>
 
 noremap <CR><CR> :Explore<CR>
+
+noremap <F3> :cclose<CR>
+noremap <F5> :w<CR>:silent make<CR>:copen<CR>
 ]])
 
 -- Menus

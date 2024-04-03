@@ -3,6 +3,8 @@ Neovim-qt quick help
 
 <F1>            Show this help
 <F2>            Show/hide file explorer
+<F3>            Hide quickfix
+<F5>            Run "make" and show quickfix
 <Tab><Tab>      Show/hide open files
 <space><space>  Show menu
 <Enter><Enter>  Open a file
