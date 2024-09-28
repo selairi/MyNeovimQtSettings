@@ -53,7 +53,7 @@ require("mason").setup({
 
 EOF
 
-nvim +"MasonInstall jdtls eslint-lsp python-lsp-server typescript-language-server"
+nvim +"MasonInstall jdtls eslint-lsp python-lsp-server"
 
 # Copy nvim settings
 cat init.lua >> ~/.config/nvim/init.lua

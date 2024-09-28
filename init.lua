@@ -6,6 +6,7 @@ vim.opt.softtabstop = 2
 vim.opt.expandtab = true
 vim.cmd [[set mouse=a
 set title titlestring=%<NeoVim:%F titlelen=70
+set nu
 ]]
 
 -- Map <Esc>> to exit from terminal mode
@@ -287,11 +288,6 @@ require'lspconfig'['jdtls'].setup{
 }
 
 require'lspconfig'['eslint'].setup{
-  on_attach = on_attach,
-  flags = lsp_flags,
-}
-
-require'lspconfig'['tsserver'].setup{
   on_attach = on_attach,
   flags = lsp_flags,
 }
