@@ -53,7 +53,7 @@ require("mason").setup({
 
 EOF
 
-nvim +"MasonInstall jdtls eslint-lsp python-lsp-server"
+nvim +"MasonInstall jdtls eslint-lsp python-lsp-server rust-analyzer"
 
 # Copy nvim settings
 cat init.lua >> ~/.config/nvim/init.lua

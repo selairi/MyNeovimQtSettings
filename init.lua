@@ -275,6 +275,18 @@ local lsp_flags = {
   debounce_text_changes = 150,
 }
 
+-- Change LSP symbols
+vim.diagnostic.config({
+  signs = {
+    text = {
+      [vim.diagnostic.severity.ERROR] = '✘',
+      [vim.diagnostic.severity.WARN] = '▲',
+      [vim.diagnostic.severity.HINT] = '⚑',
+      [vim.diagnostic.severity.INFO] = '»',
+    },
+  },
+})
+
 -- LSP servers
 
 require'lspconfig'['clangd'].setup{
@@ -297,3 +309,8 @@ require'lspconfig'['pylsp'].setup{
   flags = lsp_flags,
 }
 
+
+require'lspconfig'['rust_analyzer'].setup{
+  on_attach = on_attach,
+  flags = lsp_flags,
+}
