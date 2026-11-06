@@ -13,6 +13,7 @@ Neovim-qt quick help
 :vsplit         Split view vertically
 <C-n>           Autocomplete
 <C-x><C-o>      Autocomplete code
+<S-Tab>         Run template
 *               Finds word under cursor
 zR              Open all code folds
 zM              Close all code folds
