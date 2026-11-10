@@ -19,6 +19,7 @@ noremap <F1> :e ~/.config/nvim/help.txt<CR>
 inoremap <F1> <Esc>:e ~/.config/nvim/help.txt<CR>
 
 noremap <tab><tab> :Explore<CR>
+noremap <S-tab> :ls<CR>:b
 
 "noremap <space><space> :emenu <C-Z>
 

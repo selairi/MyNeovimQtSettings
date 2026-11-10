@@ -6,6 +6,7 @@ Neovim-qt quick help
 <F3>            Hide quickfix
 <F5>            Run "make" and show quickfix
 <Tab><Tab>      Show/hide open files
+<S-Tab>      Show/hide open files
 <space><space>  Show menu
 <Enter><Enter>  Open a file
 :Explore        Open a file
@@ -13,7 +14,7 @@ Neovim-qt quick help
 :vsplit         Split view vertically
 <C-n>           Autocomplete
 <C-x><C-o>      Autocomplete code
-<S-Tab>         Run template
+<S-Tab>         Run template (insert mode)
 *               Finds word under cursor
 zR              Open all code folds
 zM              Close all code folds
