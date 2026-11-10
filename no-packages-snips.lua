@@ -1,6 +1,6 @@
 snip_list.java = {
     sout = {'System.out.println($1);'},
-    main = {'public void main(String args[]) {$1}'},
+    main = {'public static void main(String args[]) {$1}'},
     class = {'class $1 {','}'},
     pu = {'public '},
     pri = {'private '},
